@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./styles/globals.css";
+import { ReactNode } from "react";
 
 const poppins = Poppins({
   subsets:['latin'],
@@ -11,9 +12,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Un respiro para tu mente",
   description: "Un espacio para respirar y dar una pausa",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
-import { ReactNode } from "react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return(
