@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
 
-export async function GET(request: NextRequest) {
-  console.log("🔑 API KEY LEÍDA:", process.env.COHERE_API_KEY);
+export async function GET() {
 
   try {
     const apiKey = process.env.COHERE_API_KEY;
